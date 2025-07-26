@@ -1,0 +1,7 @@
+# {version}
+
+```python
+bazel_dep(name = "rules_tcl", version = "{version}")
+```
+
+Additional documentation can be found at: https://github.com/abrisco/rules_tcl

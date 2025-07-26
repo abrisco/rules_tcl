@@ -1,0 +1,6 @@
+load("//tcl:tcl_test.bzl", "tcl_test")
+
+tcl_test(
+    name = "hash_test",
+    srcs = ["hash_test.tcl"],
+)

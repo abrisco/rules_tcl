@@ -1,0 +1,24 @@
+load("@bazel_skylib//:bzl_library.bzl", "bzl_library")
+
+exports_files([
+    "binary_wrapper.bat.tpl",
+    "binary_wrapper.sh.tpl",
+    "entrypoint.tcl",
+])
+
+alias(
+    name = "binary_wrapper.tpl",
+    actual = select({
+        "@platforms//os:windows": "binary_wrapper.bat.tpl",
+        "//conditions:default": "binary_wrapper.sh.tpl",
+    }),
+    visibility = ["//visibility:public"],
+)
+
+bzl_library(
+    name = "bzl_lib",
+    srcs = glob(["*.bzl"]),
+    visibility = ["//tcl:__pkg__"],
+    deps = [
+    ],
+)

@@ -1,0 +1,10 @@
+load("//tcl:tcl_library.bzl", "tcl_library")
+
+tcl_library(
+    name = "runfiles",
+    srcs = [
+        "pkgIndex.tcl",
+        "runfiles.tcl",
+    ],
+    visibility = ["//visibility:public"],
+)

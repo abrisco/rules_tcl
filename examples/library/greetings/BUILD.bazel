@@ -1,0 +1,10 @@
+load("//tcl:tcl_library.bzl", "tcl_library")
+
+tcl_library(
+    name = "greetings",
+    srcs = [
+        "greet.tcl",
+        "pkgIndex.tcl",
+    ],
+    visibility = ["//examples/library:__subpackages__"],
+)

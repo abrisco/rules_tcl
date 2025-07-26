@@ -1,0 +1,13 @@
+load("//:version.bzl", "VERSION")
+load("//tcl:tcl_test.bzl", "tcl_test")
+
+tcl_test(
+    name = "version_test",
+    srcs = ["version_test.tcl"],
+    data = ["//:MODULE.bazel"],
+    env = {
+        "MODULE_BAZEL": "$(rlocationpath //:MODULE.bazel)",
+        "VERSION": VERSION,
+    },
+    deps = ["//tcl/runfiles"],
+)

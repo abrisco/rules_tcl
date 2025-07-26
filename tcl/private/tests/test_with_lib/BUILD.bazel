@@ -1,0 +1,7 @@
+load("//tcl:tcl_test.bzl", "tcl_test")
+
+tcl_test(
+    name = "writelib_test",
+    srcs = ["writelib_test.tcl"],
+    deps = ["//tcl/private/tests/library/writelib"],
+)

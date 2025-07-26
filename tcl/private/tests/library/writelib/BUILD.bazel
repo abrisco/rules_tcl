@@ -1,0 +1,10 @@
+load("//tcl:tcl_library.bzl", "tcl_library")
+
+tcl_library(
+    name = "writelib",
+    srcs = [
+        "pkgIndex.tcl",
+        "write.tcl",
+    ],
+    visibility = ["//tcl/private/tests:__subpackages__"],
+)

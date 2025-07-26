@@ -1,0 +1,16 @@
+{
+  "homepage": "https://github.com/abrisco/rules_tcl",
+  "maintainers": [
+    {
+      "name": "Andre Brisco",
+      "email": "91817010+abrisco@users.noreply.github.com",
+      "github": "abrisco",
+      "github_user_id": 91817010
+    }
+  ],
+  "repository": [
+    "github:abrisco/rules_tcl"
+  ],
+  "versions": [],
+  "yanked_versions": {}
+}

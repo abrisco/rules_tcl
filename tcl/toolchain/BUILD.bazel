@@ -1,0 +1,16 @@
+load("//tcl:tcl_toolchain.bzl", "TOOLCHAIN_TYPE", "tcl_toolchain")
+
+tcl_toolchain(
+    name = "tcl_toolchain",
+    tclcore = "@tcl_lang//:tcl_core",
+    tcllib = "@tcllib",
+    tclsh = "@tcl_lang//:tclsh",
+    visibility = ["//visibility:public"],
+)
+
+toolchain(
+    name = "toolchain",
+    toolchain = ":tcl_toolchain",
+    toolchain_type = TOOLCHAIN_TYPE,
+    visibility = ["//visibility:public"],
+)
