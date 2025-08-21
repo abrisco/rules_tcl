@@ -69,19 +69,19 @@ def _tcl_toolchain_impl(ctx):
     ]
 
 tcl_toolchain = rule(
-    doc = "TODO",
+    doc = "A toolchain for building `Tcl` targets.",
     implementation = _tcl_toolchain_impl,
     attrs = {
         "tclcore": attr.label(
-            doc = "TODO",
+            doc = "A label to the `tclcore` files.",
             mandatory = True,
         ),
         "tcllib": attr.label(
-            doc = "TODO",
+            doc = "A label to the `tcllib` files.",
             mandatory = True,
         ),
         "tclsh": attr.label(
-            doc = "TODO",
+            doc = "The path to a `tclsh` binary.",
             cfg = "exec",
             executable = True,
             mandatory = True,
