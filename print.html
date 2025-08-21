@@ -230,13 +230,13 @@ load("@rules_tcl//tcl:defs.bzl", "tcl_toolchain")
 
 tcl_toolchain(<a href="rules.html#tcl_toolchain-name">name</a>, <a href="rules.html#tcl_toolchain-tclcore">tclcore</a>, <a href="rules.html#tcl_toolchain-tcllib">tcllib</a>, <a href="rules.html#tcl_toolchain-tclsh">tclsh</a>)
 </pre>
-<p>TODO</p>
+<p>A toolchain for building <code>Tcl</code> targets.</p>
 <p><strong>ATTRIBUTES</strong></p>
 <div class="table-wrapper"><table><thead><tr><th style="text-align: left">Name</th><th style="text-align: left">Description</th><th style="text-align: left">Type</th><th style="text-align: left">Mandatory</th><th style="text-align: left">Default</th></tr></thead><tbody>
 <tr><td style="text-align: left"><a id="tcl_toolchain-name"></a>name</td><td style="text-align: left">A unique name for this target.</td><td style="text-align: left"><a href="https://bazel.build/concepts/labels#target-names">Name</a></td><td style="text-align: left">required</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left"><a id="tcl_toolchain-tclcore"></a>tclcore</td><td style="text-align: left">TODO</td><td style="text-align: left"><a href="https://bazel.build/concepts/labels">Label</a></td><td style="text-align: left">required</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left"><a id="tcl_toolchain-tcllib"></a>tcllib</td><td style="text-align: left">TODO</td><td style="text-align: left"><a href="https://bazel.build/concepts/labels">Label</a></td><td style="text-align: left">required</td><td style="text-align: left"></td></tr>
-<tr><td style="text-align: left"><a id="tcl_toolchain-tclsh"></a>tclsh</td><td style="text-align: left">TODO</td><td style="text-align: left"><a href="https://bazel.build/concepts/labels">Label</a></td><td style="text-align: left">required</td><td style="text-align: left"></td></tr>
+<tr><td style="text-align: left"><a id="tcl_toolchain-tclcore"></a>tclcore</td><td style="text-align: left">A label to the <code>tclcore</code> files.</td><td style="text-align: left"><a href="https://bazel.build/concepts/labels">Label</a></td><td style="text-align: left">required</td><td style="text-align: left"></td></tr>
+<tr><td style="text-align: left"><a id="tcl_toolchain-tcllib"></a>tcllib</td><td style="text-align: left">A label to the <code>tcllib</code> files.</td><td style="text-align: left"><a href="https://bazel.build/concepts/labels">Label</a></td><td style="text-align: left">required</td><td style="text-align: left"></td></tr>
+<tr><td style="text-align: left"><a id="tcl_toolchain-tclsh"></a>tclsh</td><td style="text-align: left">The path to a <code>tclsh</code> binary.</td><td style="text-align: left"><a href="https://bazel.build/concepts/labels">Label</a></td><td style="text-align: left">required</td><td style="text-align: left"></td></tr>
 </tbody></table>
 </div>
                     </main>
